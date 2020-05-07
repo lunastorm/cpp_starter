@@ -1,0 +1,24 @@
+{
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cmake-tools",
+			"twxs.cmake",
+			"llvm-vs-code-extensions.vscode-clangd",
+			"vadimcn.vscode-lldb",
+			"matepek.vscode-catch2-test-adapter"
+		]},
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"clangd.arguments": [
+			"-clang-tidy",
+			"--compile-commands-dir=build"
+		]
+	}
+}
