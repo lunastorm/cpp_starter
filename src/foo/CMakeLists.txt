@@ -1,6 +1,6 @@
 file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${cpp_starter_SOURCE_DIR}/include/foo/*.hpp")
 file(GLOB SOURCE_LIST CONFIGURE_DEPENDS "${cpp_starter_SOURCE_DIR}/src/foo/*.cpp")
-add_library(foo OBJECT ${SOURCE_LIST} ${HEADER_LIST})
+add_library(foo ${SOURCE_LIST} ${HEADER_LIST})
 add_library(foo_test OBJECT ${SOURCE_LIST} ${HEADER_LIST})
 
 target_compile_definitions(foo PRIVATE DOCTEST_CONFIG_DISABLE)
